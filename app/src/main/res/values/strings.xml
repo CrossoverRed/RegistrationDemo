@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RegistrationDemo</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter your Name</string>
+    <string name="mobile_number">Mobile No.</string>
+    <string name="enter_mobile_number">Enter your Mobile No.</string>
+    <string name="text_amount">Amount</string>
+    <string name="enter_amount">Enter the Amount</string>
+    <string name="group_size">Group Size</string>
+    <string name="enter_group_size">Enter your Group Size</string>
+    <string name="booking_date_time">Booking Date and Time</string>
+    <string name="smoking_area">Area for Smoking?</string>
+    <string name="smoking">Smoking</string>
+    <string name="non_smoking">Non-Smoking</string>
+    <string name="discount">Discount</string>
+    <string name="enter_discount">Enter Discount</string>
+    <string name="SVS">SVS</string>
+    <string name="GST">GST</string>
+    <string name="split_cost">Split the cost?</string>
+    <string name="cash">Cash</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="reservation_details">Reservation Details</string>
+</resources>

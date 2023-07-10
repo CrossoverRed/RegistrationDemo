@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Form" />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/editInputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textName"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/enter_name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editInputName"
+                android:layout_marginBottom="8dp"
+                android:text="@string/mobile_number" />
+
+            <EditText
+                android:id="@+id/editInputMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMobile"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/enter_mobile_number"
+                android:inputType="phone" />
+            <TextView
+                android:id="@+id/textAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editInputMobile"
+                android:layout_marginBottom="8dp"
+                android:text="@string/text_amount" />
+
+            <EditText
+                android:id="@+id/editInputAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAmount"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textGroupSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editInputMobile"
+                android:layout_marginBottom="8dp"
+                android:text="@string/group_size" />
+
+            <EditText
+                android:id="@+id/numPax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textGroupSize"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/enter_group_size"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textBookingDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numPax"
+                android:layout_marginBottom="8dp"
+                android:text="@string/booking_date_time" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textBookingDateTime"
+                android:layout_marginBottom="8dp" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datePicker"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/textSmokingArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timePicker"
+                android:layout_marginBottom="8dp"
+                android:text="@string/smoking_area" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSmokingArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSmokingArea"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioSmoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/smoking" />
+
+                <RadioButton
+                    android:id="@+id/radioNonSmoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/non_smoking" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupSmokingArea"
+                android:layout_marginBottom="8dp"
+                android:text="@string/discount" />
+
+            <EditText
+                android:id="@+id/editInputDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDiscount"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/enter_discount"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbSvs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editInputDiscount"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/SVS"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cbGst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tbSvs"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/GST"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/split"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tbGst"
+                android:layout_marginBottom="8dp"
+                android:text="@string/split_cost" />
+
+            <RadioGroup
+                android:id="@+id/rgMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/split"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cash" />
+
+                <RadioButton
+                    android:id="@+id/radioPayNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_now" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgMode"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/submit" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/submit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/reset" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textReservationDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reset"
+                android:layout_marginTop="16dp"
+                android:text="@string/reservation_details"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textReservationInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textReservationDetails"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/eachPays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textReservationInfo"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/totalBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eachPays"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
